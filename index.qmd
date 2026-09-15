@@ -1,0 +1,5 @@
+# Machine Learning
+
+Welcome to the Machine Learning course.
+
+This course introduces the fundamental concepts and methods of machine learning through explanations, examples, and practical exercises.
