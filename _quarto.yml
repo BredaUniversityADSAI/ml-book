@@ -6,12 +6,16 @@ book:
 
   chapters:
     - index.qmd
-    - notebooks/001_getting_started.ipynb
-    - notebooks/002_classification.ipynb
-    - notebooks/003_regression.ipynb
-    - notebooks/004_unsupervised_learning.ipynb
+
+    - part: "Self-study"
+      chapters:
+        - notebooks/001_getting_started.ipynb
+        - notebooks/002_classification.ipynb
+        - notebooks/003_regression.ipynb
+        - notebooks/004_unsupervised_learning.ipynb
 
 format:
   html:
     theme: cosmo
     toc: true
+    number-sections: false
