@@ -152,6 +152,58 @@ number-sections: false
 
 .ml-stat span { color: var(--muted); font-size: 0.92rem; }
 
+
+.ml-course-info-wrap {
+  margin: 1.2rem 0 4rem 0;
+}
+
+.ml-course-info {
+  display: grid;
+  grid-template-columns: 1.15fr 1.3fr 1.7fr 1.6fr;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.ml-course-info-item {
+  padding: 1.2rem 1rem;
+  min-height: 110px;
+  border-right: 1px solid var(--line);
+}
+
+.ml-course-info-item:last-child {
+  border-right: 0;
+}
+
+.ml-course-info-item.lead {
+  background: #f3f9fd;
+}
+
+.ml-course-info-label {
+  color: var(--buas-orange);
+  font-size: 0.72rem;
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  margin-bottom: 0.45rem;
+}
+
+.ml-course-info-value {
+  color: var(--ink);
+  font-size: 0.92rem;
+  font-weight: 750;
+  line-height: 1.35;
+  white-space: nowrap;
+}
+
+.ml-course-info-meta {
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.4;
+  margin-top: 0.2rem;
+}
+
 .ml-section { margin: 4.4rem 0; }
 
 .ml-section-head {
@@ -371,7 +423,21 @@ number-sections: false
   .ml-hero-copy { padding: 2rem 1.4rem; }
   .ml-hero-title .hero-line { white-space: normal; }
   .ml-stats, .ml-difference, .ml-model-grid, .ml-tracks,
-  .ml-progress, .ml-journey, .ml-footer-cta { grid-template-columns: 1fr; }
+  .ml-progress, .ml-journey, .ml-footer-cta, .ml-course-info { grid-template-columns: 1fr; }
+
+  .ml-course-info-item {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+    min-height: auto;
+  }
+
+  .ml-course-info-item:last-child {
+    border-bottom: 0;
+  }
+
+  .ml-course-info-value {
+    white-space: normal;
+  }
   .ml-step, .ml-step:first-child, .ml-step:last-child {
     border-radius: 14px;
     border: 1px solid var(--line);
@@ -447,6 +513,42 @@ Learn the complete machine-learning workflow by tackling a real scientific probl
 
 <span>real client and one challenging applied ML problem</span>
 :::
+
+::::::
+
+
+:::::: {.ml-course-info-wrap}
+
+::: {.ml-eyebrow}
+Course information
+:::
+
+::::: {.ml-course-info}
+
+::: {.ml-course-info-item .lead}
+<div class="ml-course-info-label">Instructor</div>
+<div class="ml-course-info-value">Alican Noyan, PhD</div>
+<div class="ml-course-info-meta">Machine Learning</div>
+:::
+
+::: {.ml-course-info-item}
+<div class="ml-course-info-label">Programme</div>
+<div class="ml-course-info-value">Applied Data Science & AI</div>
+<div class="ml-course-info-meta">Year 1</div>
+:::
+
+::: {.ml-course-info-item}
+<div class="ml-course-info-label">Institution</div>
+<div class="ml-course-info-value">Breda University of Applied Sciences</div>
+:::
+
+::: {.ml-course-info-item}
+<div class="ml-course-info-label">Project Client</div>
+<div class="ml-course-info-value">Prof. Derya Baran · OMEGA Lab</div>
+<div class="ml-course-info-meta">KAUST · Organic photovoltaics</div>
+:::
+
+:::::
 
 ::::::
 
