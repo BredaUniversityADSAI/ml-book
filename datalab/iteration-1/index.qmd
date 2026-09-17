@@ -1,6 +1,4 @@
----
-title: "Iteration 1 — First ML Cycle"
----
+# Iteration 1 — First ML Cycle {.unnumbered}
 
 In your first iteration, you will go through the complete machine-learning workflow as quickly as possible.
 

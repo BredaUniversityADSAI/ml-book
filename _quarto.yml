@@ -21,9 +21,12 @@ book:
         - notebooks/010_random_forests.ipynb
         - notebooks/011_gradient_boosting.ipynb
 
-    - part: datalab/index.qmd
+    # Overall DataLab overview page
+    - datalab/index.qmd
+
+    # Iteration 1 becomes a part
+    - part: datalab/iteration-1/index.qmd
       chapters:
-        - datalab/iteration-1/index.qmd
         - datalab/iteration-1/i1_t1_nb1_classification.ipynb
         - datalab/iteration-1/i1_t1_nb2_regression.ipynb
         - datalab/iteration-1/i1_t1_nb3_clustering.ipynb

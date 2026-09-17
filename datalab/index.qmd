@@ -1,8 +1,4 @@
----
-title: "DataLab Tasks"
----
-
-# DataLab Tasks
+# DataLab Tasks {.unnumbered}
 
 The DataLab Tasks are the applied component of the course. You will use the concepts introduced in the self-study material to solve a real machine-learning problem.
 
