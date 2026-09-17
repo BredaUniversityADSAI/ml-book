@@ -2,7 +2,7 @@ project:
   type: book
 
 book:
-  title: "Machine Learning"
+  title: "Introduction to Machine Learning"
 
   chapters:
     - index.qmd
@@ -13,9 +13,18 @@ book:
         - notebooks/002_classification.ipynb
         - notebooks/003_regression.ipynb
         - notebooks/004_unsupervised_learning.ipynb
+        - notebooks/005_data_prep.ipynb
+        - notebooks/006_data_understanding.ipynb
+        - notebooks/007_modeling_and_evaluation.ipynb
+        - notebooks/008_advanced_scikitlearn.ipynb
+        - notebooks/009_decision_trees.ipynb
+        - notebooks/010_random_forests.ipynb
+        - notebooks/011_gradient_boosting.ipynb
+
 
 format:
   html:
     theme: cosmo
     toc: true
-    number-sections: false
+    number-sections: true
+    number-depth: 2

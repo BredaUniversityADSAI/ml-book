@@ -1,13 +1,15 @@
 ---
-title: "Overview"
 subtitle: "Applied Data Science & AI · Breda University of Applied Sciences"
 page-layout: full
 toc: false
-number-sections: false
 ---
 
 <style>
 .quarto-title-block { display: none; }
+
+section.overview-title > h1 {
+  display: none;
+}
 
 .ml-home {
   --buas-orange: #f47a20;
@@ -445,6 +447,8 @@ number-sections: false
   .ml-step + .ml-step { margin-top: 0.7rem; }
 }
 </style>
+
+# Overview {.unnumbered .overview-title}
 
 :::::::: {.ml-home}
 
