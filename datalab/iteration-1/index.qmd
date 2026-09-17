@@ -1,0 +1,27 @@
+---
+title: "Iteration 1 — First ML Cycle"
+---
+
+In your first iteration, you will go through the complete machine-learning workflow as quickly as possible.
+
+The goal is **not to build the best possible models yet**. Instead, you will experience the complete workflow and understand how its different parts fit together. You will revisit and improve these parts in later iterations.
+
+## Task 1 — CRISP-DM
+
+You will use `starter_dataset.xlsx` to build your first:
+
+- classification model
+- regression model
+- clustering model
+
+## Complete the notebooks
+
+Complete the following notebooks **in order**:
+
+1. [Classification](i1_t1_nb1_classification.ipynb)
+2. [Regression](i1_t1_nb2_regression.ipynb)
+3. [Clustering](i1_t1_nb3_clustering.ipynb)
+
+Iteration 1 starts and ends with Task 1.
+
+In Iteration 2, you will revisit the CRISP-DM workflow in greater depth.

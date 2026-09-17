@@ -1,0 +1,15 @@
+---
+title: "DataLab Tasks"
+---
+
+# DataLab Tasks
+
+The DataLab Tasks are the applied component of the course. You will use the concepts introduced in the self-study material to solve a real machine-learning problem.
+
+The machine-learning part of the DataLab follows an **iterative CRISP-DM workflow**. Tasks are therefore not simply completed once from Task 1 to Task 7. Instead, you will revisit different parts of the workflow as your understanding of the data and models develops.
+
+## Iterations
+
+### [Iteration 1 — First ML Cycle](iteration-1/index.qmd)
+
+Go through the complete machine-learning workflow for the first time and build your first classification, regression, and clustering models.
