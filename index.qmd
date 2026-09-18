@@ -29,17 +29,13 @@ Year 1 · Machine Learning
 
 ::::
 
-::: {.ml-kicker}
-Public machine learning course · BUas
-:::
-
 ::: {.ml-hero-title}
 <span class="hero-line">Machine learning,</span>
 <span class="hero-line accent">with a real client.</span>
 :::
 
 ::: {.ml-lead}
-Learn the complete machine-learning workflow by tackling a real scientific problem for a real client. Work with molecular data from organic photovoltaics and apply established machine-learning methods to predict properties relevant to next-generation solar materials.
+You are a data scientist working with the Omega Lab on next-generation solar cells. As energy demand rises, we need more efficient solar technologies. The molecules used in solar cells are key to their performance. Your job: build machine-learning models that predict molecular properties, screening thousands of molecules in seconds to shortlist the most promising candidates for lab testing.
 :::
 
 ::: {.ml-actions}
@@ -54,58 +50,26 @@ Learn the complete machine-learning workflow by tackling a real scientific probl
 
 ::::::
 
-:::::: {.ml-stats}
-
-::: {.ml-stat}
-**779**
-
-<span>unique molecular structures across the project datasets</span>
-:::
-
-::: {.ml-stat}
-**3**
-
-<span>core ML paradigms: classification, regression and clustering</span>
-:::
-
-::: {.ml-stat}
-**2**
-
-<span>prediction challenges used to benchmark student models</span>
-:::
-
-::: {.ml-stat}
-**1**
-
-<span>real client and one challenging applied ML problem</span>
-:::
-
-::::::
-
-
 :::::: {.ml-course-info-wrap}
-
-::: {.ml-eyebrow}
-Course information
-:::
 
 ::::: {.ml-course-info}
 
 ::: {.ml-course-info-item .lead}
 <div class="ml-course-info-label">Instructor</div>
-<div class="ml-course-info-value">Alican Noyan, PhD</div>
+<div class="ml-course-info-value">M. Alican Noyan</div>
 <div class="ml-course-info-meta">Machine Learning</div>
 :::
 
 ::: {.ml-course-info-item}
-<div class="ml-course-info-label">Programme</div>
+<div class="ml-course-info-label">Program</div>
 <div class="ml-course-info-value">Applied Data Science & AI</div>
-<div class="ml-course-info-meta">Year 1</div>
+<div class="ml-course-info-meta">Year 1 · 2026/27</div>
 :::
 
 ::: {.ml-course-info-item}
 <div class="ml-course-info-label">Institution</div>
 <div class="ml-course-info-value">Breda University of Applied Sciences</div>
+<div class="ml-course-info-meta">Breda, The Netherlands</div>
 :::
 
 ::: {.ml-course-info-item}
