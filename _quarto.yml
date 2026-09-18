@@ -4,6 +4,9 @@ project:
 book:
   title: "Introduction to Machine Learning"
 
+  sidebar:
+    collapse-level: 1
+
   chapters:
     - index.qmd
 
