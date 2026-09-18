@@ -22,6 +22,7 @@ toc: false
 
 ![](https://www.buas.nl/sites/default/files/2018-09/Logo%20BUas_RGB.png){alt="Breda University of Applied Sciences logo"}
 
+
 ::: {.ml-program}
 **Applied Data Science & AI**  
 Year 1 · Machine Learning
