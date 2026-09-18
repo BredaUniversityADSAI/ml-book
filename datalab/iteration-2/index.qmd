@@ -1,0 +1,64 @@
+# Iteration 2 — Structured ML Cycle {.unnumbered}
+
+In Iteration 1, you moved quickly through the complete machine-learning workflow and built your first classification, regression and clustering models.
+
+In Iteration 2, you will go through the workflow again, but this time **in greater depth**. The work is still structured: notebooks and resources will guide you through the main steps.
+
+## Task 2 — Business Understanding
+
+Before going deeper into the data, develop enough domain understanding to reason about what you are modelling.
+
+Read:
+
+- [SMILES: A Simplified Chemical Language](PATH-TO-PDF)
+
+Your goal is **not to master chemistry**. Focus on understanding what SMILES strings represent and how they describe molecular structure.
+
+## Task 3 — Data Understanding
+
+Explore the HOPV data, identify inputs and targets, investigate data quality, and examine important distributions and relationships.
+
+Complete **in order**:
+
+1. [Understanding HOPV Stability](i2_t3_nb1_understanding_hopv_stability_csv.ipynb)
+2. [Understanding HOMO/LUMO Data](i2_t3_nb2_understanding_hopv_homolumo_data.ipynb)
+
+## Task 4 — Data Preparation
+
+Turn the raw molecular data into data suitable for machine-learning models.
+
+Complete:
+
+- [Data Preparation](i2_t4_nb1_data_prep.ipynb)
+
+## Task 5 — Classification
+
+Build a classification model to predict molecular stability.
+
+Complete:
+
+- [Classification](i2_t5_nb1_classification.ipynb)
+
+## Task 6 — Regression
+
+Build regression models to predict HOMO and LUMO energy levels.
+
+Complete:
+
+- [Regression](i2_t6_nb1_regression.ipynb)
+
+## Task 7 — Clustering
+
+Use clustering to investigate molecular structure and identify patterns that may also be useful for your supervised models.
+
+Complete:
+
+- [Clustering](i2_t7_nb1_clustering.ipynb)
+
+## Keep iterating
+
+Although the notebooks above provide a structured path, the workflow is not strictly linear.
+
+What you discover during modelling may give you a reason to return to your data, change its preparation, investigate a new feature, or revisit your understanding of the problem.
+
+Iteration 3+ will make this process increasingly open-ended.

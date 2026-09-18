@@ -24,12 +24,24 @@ book:
     # Overall DataLab overview page
     - datalab/index.qmd
 
-    # Iteration 1 becomes a part
+    # Iteration
     - part: datalab/iteration-1/index.qmd
       chapters:
         - datalab/iteration-1/i1_t1_nb1_classification.ipynb
         - datalab/iteration-1/i1_t1_nb2_regression.ipynb
         - datalab/iteration-1/i1_t1_nb3_clustering.ipynb
+
+    # Iteration 2
+    - part: datalab/iteration-2/index.qmd
+      chapters:
+        - datalab/iteration-2/i2_t3_nb1_understanding_hopv_stability_csv.ipynb
+        - datalab/iteration-2/i2_t3_nb2_understanding_hopv_homolumo_data.ipynb
+        - datalab/iteration-2/i2_t4_nb1_data_prep.ipynb
+        - datalab/iteration-2/i2_t5_nb1_classification.ipynb
+        - datalab/iteration-2/i2_t6_nb1_regression.ipynb
+        - datalab/iteration-2/i2_t7_nb1_clustering.ipynb
+  
+
 
 format:
   html:
