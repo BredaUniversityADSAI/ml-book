@@ -36,7 +36,7 @@ Year 1 · Machine Learning
 :::
 
 ::: {.ml-lead}
-The Omega Lab is searching for molecules for next-generation solar cells. Testing each one in the lab is slow and expensive. They want you to build a machine-learning model that predicts molecular properties from structure, so they can screen thousands at a time and shortlist what's worth testing.
+The Omega Lab is searching for molecules for next-generation solar cells. Testing each one in the lab is slow and expensive. They want you to build a machine-learning model that predicts molecular properties, so they can screen thousands in seconds and only test the top candidates.
 :::
 
 ::: {.ml-actions}
