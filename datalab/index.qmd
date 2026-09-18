@@ -1,11 +1,31 @@
-# DataLab Tasks {.unnumbered}
+# DataLab Project {.unnumbered}
 
-The DataLab Tasks are the applied component of the course. You will use the concepts introduced in the self-study material to solve a real machine-learning problem.
+The DataLab Project is the applied component of the course. You will use the concepts introduced in the self-study material to solve a real machine-learning problem.
 
-The machine-learning part of the DataLab follows an **iterative CRISP-DM workflow**. Tasks are therefore not simply completed once from Task 1 to Task 7. Instead, you will revisit different parts of the workflow as your understanding of the data and models develops.
+The project follows an **iterative CRISP-DM workflow**. Rather than completing each part of the machine-learning process only once, you will revisit data understanding, data preparation, modeling, and evaluation as your understanding of the problem develops.
+
+As you progress through the project, the level of guidance gradually decreases.
 
 ## Iterations
 
 ### [Iteration 1 — First ML Cycle](iteration-1/index.qmd)
 
 Go through the complete machine-learning workflow for the first time and build your first classification, regression, and clustering models.
+
+This iteration is highly guided. The goal is to experience the complete workflow quickly and establish your first working models rather than optimize performance.
+
+### [Iteration 2 — Go Deeper](iteration-2/index.qmd)
+
+Revisit the machine-learning workflow in greater depth. Develop a stronger understanding of the problem and data, improve your data preparation, and build more considered classification, regression, and clustering models.
+
+This iteration is still structured, but you will begin making more decisions yourself and applying concepts introduced in the self-study material.
+
+### [Iteration 3+ — Compete, Iterate, Improve](iteration-3/index.qmd)
+
+From this point onward, the project becomes open-ended.
+
+Use your existing models as a starting point and compete on the Kaggle challenges. Analyze your results, identify weaknesses, form hypotheses, and decide what to improve next.
+
+There is no fixed sequence. You may revisit any part of the machine-learning workflow, including data understanding, data preparation, feature engineering, validation, model selection, and hyperparameter tuning.
+
+Continue iterating based on evidence until you are satisfied with your solution.

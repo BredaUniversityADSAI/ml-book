@@ -1,64 +1,66 @@
 # Iteration 2 {.unnumbered}
 
-In Iteration 1, you moved quickly through the complete machine-learning workflow and built your first classification, regression and clustering models.
+In Iteration 1, you moved quickly through the complete machine-learning workflow and built your first classification, regression, and clustering models.
 
-In Iteration 2, you will go through the workflow again, but this time **in greater depth**. The work is still structured: notebooks and resources will guide you through the main steps.
+In Iteration 2, you will go through the workflow again, but this time **in greater depth**.
 
-## Task 2 — Business Understanding
+The work is still structured: notebooks and resources will guide you through the main steps. However, you will begin making more decisions yourself and applying concepts introduced in the self-study material.
+
+## Business Understanding
 
 Before going deeper into the data, develop enough domain understanding to reason about what you are modelling.
 
 Read:
 
-- [SMILES: A Simplified Chemical Language](PATH-TO-PDF)
+* [SMILES: A Simplified Chemical Language](PATH-TO-PDF)
 
 Your goal is **not to master chemistry**. Focus on understanding what SMILES strings represent and how they describe molecular structure.
 
-## Task 3 — Data Understanding
+## Data Understanding
 
-Explore the HOPV data, identify inputs and targets, investigate data quality, and examine important distributions and relationships.
+Explore the HOPV data, identify the input and target variables, investigate data quality, and examine important distributions and relationships.
 
 Complete **in order**:
 
 1. [Understanding HOPV Stability](i2_t3_nb1_understanding_hopv_stability_csv.ipynb)
 2. [Understanding HOMO/LUMO Data](i2_t3_nb2_understanding_hopv_homolumo_data.ipynb)
 
-## Task 4 — Data Preparation
+## Data Preparation
 
 Turn the raw molecular data into data suitable for machine-learning models.
 
 Complete:
 
-- [Data Preparation](i2_t4_nb1_data_prep.ipynb)
+* [Data Preparation](i2_t4_nb1_data_prep.ipynb)
 
-## Task 5 — Classification
+## Classification
 
 Build a classification model to predict molecular stability.
 
 Complete:
 
-- [Classification](i2_t5_nb1_classification.ipynb)
+* [Classification](i2_t5_nb1_classification.ipynb)
 
-## Task 6 — Regression
+## Regression
 
 Build regression models to predict HOMO and LUMO energy levels.
 
 Complete:
 
-- [Regression](i2_t6_nb1_regression.ipynb)
+* [Regression](i2_t6_nb1_regression.ipynb)
 
-## Task 7 — Clustering
+## Clustering
 
 Use clustering to investigate molecular structure and identify patterns that may also be useful for your supervised models.
 
 Complete:
 
-- [Clustering](i2_t7_nb1_clustering.ipynb)
+* [Clustering](i2_t7_nb1_clustering.ipynb)
 
 ## Keep iterating
 
-Although the notebooks above provide a structured path, the workflow is not strictly linear.
+Although the notebooks provide a structured path, the machine-learning workflow is not strictly linear.
 
-What you discover during modelling may give you a reason to return to your data, change its preparation, investigate a new feature, or revisit your understanding of the problem.
+What you discover during modelling may give you a reason to return to the data, change its preparation, investigate a new feature, reconsider your validation strategy, or revisit your understanding of the problem.
 
-Iteration 3+ will make this process increasingly open-ended.
+In [Iteration 3+](../iteration-3/index.qmd), this process becomes open-ended.

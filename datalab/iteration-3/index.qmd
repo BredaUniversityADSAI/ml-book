@@ -1,0 +1,88 @@
+# Iteration 3+ {.unnumbered}
+
+You now have working classification, regression, and clustering pipelines and a much stronger understanding of the data.
+
+From this point onward, the project becomes **open-ended**.
+
+There are no step-by-step notebooks and no fixed sequence to follow. Your goal is to improve your solution through repeated experimentation and evidence-based decisions.
+
+## The challenge
+
+You will use your models to make predictions for previously unseen molecules and submit those predictions to Kaggle.
+
+The competitions give you an external measure of how well your models generalize.
+
+You will work on two machine-learning problems:
+
+* **Classification:** predict molecular stability
+* **Regression:** predict HOMO and LUMO energy levels
+
+Your current models from Iteration 2 are your starting point.
+
+## Your workflow
+
+A strong machine-learning solution rarely comes from changing only the model.
+
+Use your Kaggle results, validation performance, visualizations, and other evidence to identify weaknesses and decide what to investigate next.
+
+You may revisit any part of the workflow, including:
+
+* business and domain understanding
+* data understanding
+* data preparation
+* feature engineering
+* feature selection
+* validation strategy
+* model selection
+* hyperparameter tuning
+* classification
+* regression
+* clustering
+
+There is no required order.
+
+For example, poor model performance may lead you back to data preparation. Clustering may reveal groups of molecules that behave differently. A validation score that does not agree with your Kaggle score may indicate that your validation strategy needs to change.
+
+## Iterate with a purpose
+
+Avoid changing things randomly.
+
+For each iteration:
+
+1. Identify something you want to understand or improve.
+2. Form a hypothesis.
+3. Make a change.
+4. Evaluate the result.
+5. Decide what to do next.
+
+Keep track of your experiments so that you know which changes improved your solution and which did not.
+
+## Go beyond the baseline
+
+Use what you learn throughout the course to explore stronger approaches.
+
+Possible directions include:
+
+* new machine-learning algorithms
+* feature engineering
+* feature selection
+* different preprocessing strategies
+* alternative validation approaches
+* hyperparameter tuning
+* ensemble methods
+* insights from clustering
+* deeper investigation of model errors
+
+The self-study material provides techniques you can draw from, but you decide which ones are appropriate for the problem.
+
+## Compete, iterate, improve
+
+There is no predefined final iteration.
+
+Continue moving through the CRISP-DM cycle as new questions emerge:
+
+**understand → prepare → model → evaluate → learn → repeat**
+
+The goal is no longer to follow instructions.
+
+The goal is to make increasingly well-informed machine-learning decisions and build the strongest solution you can.
