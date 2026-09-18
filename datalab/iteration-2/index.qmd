@@ -1,4 +1,4 @@
-# Iteration 2 — Structured ML Cycle {.unnumbered}
+# Iteration 2 {.unnumbered}
 
 In Iteration 1, you moved quickly through the complete machine-learning workflow and built your first classification, regression and clustering models.
 

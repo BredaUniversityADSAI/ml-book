@@ -1,4 +1,4 @@
-# Iteration 1 — First ML Cycle {.unnumbered}
+# Iteration 1 {.unnumbered}
 
 In your first iteration, you will go through the complete machine-learning workflow as quickly as possible.
 
