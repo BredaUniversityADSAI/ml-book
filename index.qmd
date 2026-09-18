@@ -31,12 +31,12 @@ Year 1 · Machine Learning
 ::::
 
 ::: {.ml-hero-title}
-<span class="hero-line">Machine learning,</span>
-<span class="hero-line accent">with a real client.</span>
+<span class="hero-line">Learn machine learning</span>
+<span class="hero-line accent">by solving a real problem.</span>
 :::
 
 ::: {.ml-lead}
-You are a data scientist working with the Omega Lab on next-generation solar cells. As energy demand rises, we need more efficient solar technologies. The molecules used in solar cells are key to their performance. Your job: build machine-learning models that predict molecular properties, screening thousands of molecules in seconds to shortlist the most promising candidates for lab testing.
+The Omega Lab is searching for molecules for next-generation solar cells. Testing each one in the lab is slow and expensive. They want you to build a machine-learning model that predicts molecular properties from structure, so they can screen thousands at a time and shortlist what's worth testing.
 :::
 
 ::: {.ml-actions}

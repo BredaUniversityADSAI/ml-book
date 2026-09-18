@@ -36,8 +36,9 @@ section.overview-title > h1 {
 
 .ml-hero {
   display: grid;
-  grid-template-columns: 1.25fr 0.75fr;
+  grid-template-columns: 1.4fr 0.6fr;
   min-height: 520px;
+
   border-radius: 26px;
   overflow: hidden;
   background: linear-gradient(135deg, #f7fbff 0%, #ffffff 60%);
@@ -98,7 +99,7 @@ section.overview-title > h1 {
 }
 
 .ml-hero-title {
-  font-size: clamp(2.4rem, 4vw, 3.8rem);
+  font-size: clamp(2.1rem, 3.3vw, 3.2rem);
   line-height: 1.02;
   letter-spacing: -0.04em;
   margin: 0 0 1.1rem 0;
