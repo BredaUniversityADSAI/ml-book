@@ -41,6 +41,8 @@ book:
         - datalab/iteration-2/i2_t6_nb1_regression.ipynb
         - datalab/iteration-2/i2_t7_nb1_clustering.ipynb
   
+    # Iteration 3
+    - part: datalab/iteration-3/index.qmd
 
 
 format:
