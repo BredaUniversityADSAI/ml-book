@@ -493,6 +493,72 @@ section.overview-title > h1 {
 }
 
 
+.ml-textbook {
+  background: white;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--buas-blue);
+  border-radius: 0 16px 16px 0;
+  padding: 1.4rem 1.8rem;
+  margin-top: 0.75rem;
+}
+
+.ml-textbook-label {
+  color: var(--buas-blue);
+  font-size: 0.72rem;
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  margin-bottom: 0.45rem;
+}
+
+.ml-textbook-title {
+  font-size: 1.07rem;
+  font-weight: 750;
+  color: var(--ink);
+  line-height: 1.35;
+  margin-bottom: 0.3rem;
+}
+
+.ml-textbook-meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.ml-prereq-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.ml-prereq-card {
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1.3rem 1.4rem;
+}
+
+.ml-prereq-card h3 {
+  font-size: 1rem;
+  margin: 0 0 0.5rem 0;
+  color: var(--ink);
+}
+
+.ml-prereq-card p {
+  font-size: 0.875rem;
+  margin: 0;
+  line-height: 1.55;
+}
+
+.ml-sub-eyebrow {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 2rem 0 0;
+}
+
 /* =========================================================
    Responsive
    ========================================================= */
@@ -509,7 +575,8 @@ section.overview-title > h1 {
   }
 
   .ml-difference,
-  .ml-stats {
+  .ml-stats,
+  .ml-prereq-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -534,7 +601,8 @@ section.overview-title > h1 {
   .ml-progress,
   .ml-journey,
   .ml-footer-cta,
-  .ml-course-info {
+  .ml-course-info,
+  .ml-prereq-grid {
     grid-template-columns: 1fr;
   }
 
