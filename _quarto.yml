@@ -30,6 +30,8 @@ book:
     # Iteration
     - part: datalab/iteration-1/index.qmd
       chapters:
+        - datalab/iteration-1/task1_business_understanding.qmd
+        - datalab/iteration-1/task1_data_understanding.qmd
         - datalab/iteration-1/i1_t1_nb1_classification.ipynb
         - datalab/iteration-1/i1_t1_nb2_regression.ipynb
         - datalab/iteration-1/i1_t1_nb3_clustering.ipynb

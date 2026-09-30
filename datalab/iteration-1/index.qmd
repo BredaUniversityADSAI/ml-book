@@ -16,13 +16,15 @@ You will use `starter_dataset.xlsx` to build your first:
 
 At this stage, keep things simple. Focus on getting from data to working models rather than optimizing performance.
 
-## Complete the notebooks
+## Complete the pages and notebooks
 
-Complete the following notebooks **in order**:
+Work through the following pages **in order**:
 
-1. [Classification](i1_t1_nb1_classification.ipynb)
-2. [Regression](i1_t1_nb2_regression.ipynb)
-3. [Clustering](i1_t1_nb3_clustering.ipynb)
+1. [Business Understanding](task1_business_understanding.qmd)
+2. [Data Understanding](task1_data_understanding.qmd)
+3. [Classification](i1_t1_nb1_classification.ipynb)
+4. [Regression](i1_t1_nb2_regression.ipynb)
+5. [Clustering](i1_t1_nb3_clustering.ipynb)
 
 Once you have completed all three notebooks, you have finished your first machine-learning cycle.
 
