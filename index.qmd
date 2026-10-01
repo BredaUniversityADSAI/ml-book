@@ -88,6 +88,34 @@ The Omega Lab is searching for molecules for next-generation solar cells. Testin
 :::: {.ml-section-head}
 
 ::: {.ml-eyebrow}
+The Framework
+:::
+
+## Machine learning is a process.
+
+In this course, CRISP-DM structures both how you learn machine learning and how you apply it in the course project.
+
+![CRISP-DM stands for Cross-Industry Standard Process for Data Mining. Developed in the late 1990s as an industry-oriented framework, it remains widely used as a way to structure data science and machine learning projects.](images/crispdm.png){width="75%"}
+
+These are not six steps that you complete once in order. Machine learning is an **iterative** process. You may move back and forth between Data Understanding and Data Preparation, evaluation may reveal that a preprocessing decision needs to be revisited, and deployment may even show that the original problem was not defined in the right way.
+
+Therefore, it is important not to treat these stages as tasks to complete once and never revisit. Instead, move through the cycle early, learn from each stage, and use those insights to improve the next iteration.
+
+::: {.ml-note}
+**Note:** CRISP-DM was developed before many modern production machine learning practices existed. In particular, deployment today can include serving models, monitoring, retraining, data and model pipelines, reproducibility, governance, and continuous evaluation.
+
+More modern frameworks such as CRISP-ML(Q) extend these ideas for production machine learning systems. In this introductory course we keep the simpler CRISP-DM structure so that we can focus on the core machine learning process. Production ML and these more modern practices are covered in later courses.
+:::
+
+::::
+
+::::::
+
+:::::: {.ml-section}
+
+:::: {.ml-section-head}
+
+::: {.ml-eyebrow}
 Why this course is different
 :::
 
@@ -154,7 +182,7 @@ Students take the role of **applied data scientists**. They use established mach
 ::::
 
 :::: {.ml-video}
-<iframe src="https://www.youtube.com/embed/2dMROtxPB3M?start=116" title="OMEGA Research Lab" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/2dMROtxPB3M?start=179" title="OMEGA Research Lab" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 ::::
 
 ::::::
