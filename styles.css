@@ -324,6 +324,221 @@ section.overview-title > h1 {
   border: 0;
 }
 
+/* ---------- Click-to-load video poster ---------- */
+.ml-video-poster {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  overflow: hidden;
+  text-align: left;
+  font: inherit;
+  color: white;
+  background:
+    radial-gradient(55% 75% at 78% 112%, rgba(244, 122, 32, 0.55), transparent 62%),
+    radial-gradient(45% 60% at 70% 50%, rgba(0, 133, 210, 0.28), transparent 70%),
+    radial-gradient(60% 70% at 0% 0%, rgba(0, 85, 140, 0.55), transparent 70%),
+    linear-gradient(135deg, #081c2c 0%, #0f3350 55%, #0b2539 100%);
+}
+
+.ml-video-poster:focus-visible {
+  outline: 3px solid var(--buas-orange);
+  outline-offset: -3px;
+}
+
+.ml-video-lattice {
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='97' viewBox='0 0 56 97'%3E%3Cpath d='M28 0 L56 16 L56 48 L28 64 L0 48 L0 16 Z M28 64 L28 97' fill='none' stroke='%23ffffff' stroke-opacity='0.09' stroke-width='1'/%3E%3C/svg%3E");
+  background-size: 56px 97px;
+  -webkit-mask-image: linear-gradient(100deg, transparent 25%, #000 80%);
+  mask-image: linear-gradient(100deg, transparent 25%, #000 80%);
+}
+
+/* Molecule orbiting the play button; play sits in the benzene ring. */
+.ml-video-molecule {
+  position: absolute;
+  top: 50%;
+  left: 72%;
+  width: min(52%, 34rem);
+  transform: translate(-50%, -50%);
+  overflow: visible;
+}
+
+.ml-video-molecule > g {
+  transform-origin: 200px 200px;
+  animation: ml-orbit 90s linear infinite;
+}
+
+.ml-video-molecule .bonds polygon,
+.ml-video-molecule .bonds line {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.28);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+}
+
+.ml-video-molecule .bonds .inner {
+  stroke: rgba(255, 255, 255, 0.12);
+}
+
+.ml-video-molecule .atoms circle {
+  fill: #dbe7f0;
+  opacity: 0.75;
+}
+
+.ml-video-molecule .atoms .o { fill: #ff8a3d; opacity: 0.95; }
+.ml-video-molecule .atoms .n { fill: #3aa0ff; opacity: 0.95; }
+.ml-video-molecule .atoms .s { fill: #ffcf4a; opacity: 0.95; }
+.ml-video-molecule .atoms .h { fill: #ffffff; opacity: 0.55; }
+
+@keyframes ml-orbit {
+  to { transform: rotate(360deg); }
+}
+
+.ml-video-play {
+  position: absolute;
+  top: 50%;
+  left: 72%;
+  width: clamp(3.6rem, 8vw, 5.4rem);
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: var(--buas-orange);
+  box-shadow: 0 10px 34px rgba(244, 122, 32, 0.55);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Play triangle */
+.ml-video-play::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  border-style: solid;
+  border-width: 0.62em 0 0.62em 1.05em;
+  border-color: transparent transparent transparent white;
+  font-size: clamp(0.9rem, 1.8vw, 1.25rem);
+}
+
+/* Pulsing ring */
+.ml-video-play::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid rgba(244, 122, 32, 0.8);
+  animation: ml-ring 2.4s ease-out infinite;
+}
+
+@keyframes ml-ring {
+  0% { transform: scale(1); opacity: 0.9; }
+  100% { transform: scale(1.9); opacity: 0; }
+}
+
+.ml-video-poster:hover .ml-video-play,
+.ml-video-poster:focus-visible .ml-video-play {
+  transform: translate(-50%, -50%) scale(1.08);
+  box-shadow: 0 14px 44px rgba(244, 122, 32, 0.75);
+}
+
+.ml-video-text {
+  position: absolute;
+  left: 7%;
+  bottom: 13%;
+  max-width: 46%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.ml-video-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--buas-orange);
+  font-size: 0.78rem;
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+.ml-video-kicker::before {
+  content: "";
+  width: 1.6rem;
+  height: 2px;
+  background: currentColor;
+}
+
+.ml-video-title {
+  font-size: clamp(1.35rem, 3.1vw, 2.5rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.ml-video-source {
+  color: #b8cad8;
+  font-size: clamp(0.78rem, 1.2vw, 0.92rem);
+}
+
+.ml-video-consent {
+  position: absolute;
+  right: 1.1rem;
+  bottom: 0.9rem;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+}
+
+.ml-video-fallback {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 0.8rem;
+  text-align: center;
+  color: white;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ml-video-molecule > g,
+  .ml-video-play::after {
+    animation: none;
+  }
+}
+
+/* Narrow: molecule + play move to the upper right, text spans wider. */
+@media (max-width: 680px) {
+  .ml-video-molecule,
+  .ml-video-play {
+    top: 32%;
+    left: 81%;
+  }
+
+  .ml-video-molecule {
+    width: 46%;
+  }
+
+  .ml-video-text {
+    left: 6%;
+    bottom: 10%;
+    max-width: 60%;
+    gap: 0.35rem;
+  }
+
+  .ml-video-kicker {
+    font-size: 0.66rem;
+  }
+
+  .ml-video-consent {
+    display: none;
+  }
+}
+
 .ml-pipeline img {
   width: 100%;
   border-radius: 20px;

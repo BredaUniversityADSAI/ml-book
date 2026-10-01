@@ -88,7 +88,53 @@ The Omega Lab is searching for molecules for next-generation solar cells. Testin
 :::::: {.ml-section .ml-client}
 
 :::: {.ml-video}
-<iframe src="https://www.youtube.com/embed/2dMROtxPB3M?start=179" title="OMEGA Research Lab" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+```{=html}
+<!-- Click-to-load: YouTube is only contacted after the visitor presses play. -->
+<button type="button" class="ml-video-poster" data-video-id="2dMROtxPB3M" data-start="179"
+        aria-label="Play video: Prof. Derya Baran on powering the future (loads from YouTube)">
+  <span class="ml-video-lattice" aria-hidden="true"></span>
+  <svg class="ml-video-molecule" viewBox="0 0 400 400" aria-hidden="true">
+    <g class="bonds">
+      <polygon points="252,170 252,230 200,260 148,230 148,170 200,140" />
+      <polygon points="238,178 238,222 200,244 162,222 162,178 200,156" class="inner" />
+      <line x1="252" y1="170" x2="304" y2="140" /><line x1="304" y1="140" x2="356" y2="170" />
+      <line x1="304" y1="140" x2="304" y2="82" />
+      <line x1="148" y1="230" x2="96" y2="260" /><line x1="96" y1="260" x2="96" y2="318" />
+      <line x1="200" y1="140" x2="200" y2="82" /><line x1="252" y1="230" x2="296" y2="262" />
+    </g>
+    <g class="atoms">
+      <circle cx="252" cy="170" r="7" /><circle cx="252" cy="230" r="7" /><circle cx="200" cy="260" r="7" />
+      <circle cx="148" cy="230" r="7" /><circle cx="148" cy="170" r="7" /><circle cx="200" cy="140" r="7" />
+      <circle cx="304" cy="140" r="7" /><circle cx="96" cy="260" r="7" />
+      <circle cx="356" cy="170" r="10" class="o" /><circle cx="304" cy="82" r="9" class="n" />
+      <circle cx="96" cy="318" r="9" class="o" /><circle cx="200" cy="82" r="10" class="s" />
+      <circle cx="296" cy="262" r="6" class="h" />
+    </g>
+  </svg>
+  <span class="ml-video-play" aria-hidden="true"></span>
+  <span class="ml-video-text">
+    <span class="ml-video-kicker">Meet the client</span>
+    <span class="ml-video-title">Prof. Derya Baran on powering the&nbsp;future</span>
+    <span class="ml-video-source">KAUST × National Geographic · <em>Chasing Answers</em></span>
+  </span>
+  <span class="ml-video-consent">Loads from YouTube on play</span>
+</button>
+<noscript><a class="ml-video-fallback" href="https://www.youtube.com/watch?v=2dMROtxPB3M&t=179s" target="_blank" rel="noopener">Watch the video on YouTube</a></noscript>
+<script>
+  document.querySelectorAll(".ml-video-poster").forEach(function (poster) {
+    poster.addEventListener("click", function () {
+      var iframe = document.createElement("iframe");
+      iframe.src = "https://www.youtube-nocookie.com/embed/" + poster.dataset.videoId +
+        "?start=" + poster.dataset.start + "&autoplay=1&rel=0";
+      iframe.title = "Prof. Derya Baran on powering the future";
+      iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+      iframe.allowFullscreen = true;
+      poster.replaceWith(iframe);
+      iframe.focus();
+    });
+  });
+</script>
+```
 ::::
 
 :::: {.ml-client-copy}
