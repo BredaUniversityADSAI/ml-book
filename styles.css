@@ -1005,6 +1005,26 @@ html {
   animation: ml-pulse 2s ease-in-out infinite;
 }
 
+/* Available resource: a blue link instead of the pulsing "under preparation" badge. */
+.ml-status-live {
+  background: #eef5fa;
+  border-color: #c7dcea;
+  color: var(--buas-blue);
+  text-decoration: none;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.ml-status-live::before {
+  display: none;
+}
+
+.ml-status-live:hover,
+.ml-status-live:focus-visible {
+  background: #dcebf5;
+  border-color: var(--buas-blue);
+  color: var(--buas-blue);
+}
+
 @keyframes ml-pulse {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.35; }
@@ -1129,6 +1149,125 @@ html {
   .ml-step + .ml-step {
     margin-top: 0.7rem;
   }
+}
+
+/* =========================================================
+   Homepage in dark mode (body.quarto-dark is set by the sidebar toggle)
+   ========================================================= */
+
+body.quarto-dark .ml-home {
+  --buas-blue: #5aaee6;
+  --ink: #e3e9ef;
+  --muted: #9aa8b6;
+  --soft: #17212b;
+  --line: #2a3744;
+  --card: #141d26;
+}
+
+body.quarto-dark .ml-brand img {
+  background: #ffffff;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+body.quarto-dark .ml-hero {
+  background: linear-gradient(135deg, #132131 0%, #111820 60%);
+  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.35);
+}
+
+body.quarto-dark .ml-kicker {
+  background: #13324a;
+}
+
+body.quarto-dark .ml-lead {
+  color: #b5c1cd;
+}
+
+body.quarto-dark .ml-btn-secondary {
+  background: var(--soft);
+  border-color: #2f4152;
+}
+
+body.quarto-dark .ml-course-info,
+body.quarto-dark .ml-model-card,
+body.quarto-dark .ml-quote,
+body.quarto-dark .ml-step,
+body.quarto-dark .ml-track,
+body.quarto-dark .ml-textbook,
+body.quarto-dark .ml-resource-card {
+  background: var(--card);
+}
+
+/* The featured quote is already dark; keep its navy panel. */
+body.quarto-dark .ml-quote-featured {
+  background: #102f46;
+}
+
+body.quarto-dark .ml-course-info-item.lead {
+  background: #13283a;
+}
+
+body.quarto-dark .ml-diff-card .num {
+  background: #0b6aa8;
+}
+
+body.quarto-dark .ml-track {
+  --accent-soft: #15314a;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.3);
+}
+
+body.quarto-dark .ml-track:nth-child(2) {
+  --accent-soft: #3a2412;
+}
+
+body.quarto-dark .ml-track:nth-child(3) {
+  --accent: #2bb39f;
+  --accent-soft: #12342f;
+}
+
+body.quarto-dark .ml-track:not(:last-child)::after {
+  border-color: #4a5866;
+}
+
+body.quarto-dark .ml-journey-item {
+  background: linear-gradient(180deg, #16202a 0%, #131b23 100%);
+}
+
+body.quarto-dark .ml-note {
+  background: #2a1d12;
+  color: #f1d2b6;
+}
+
+body.quarto-dark .ml-resource-card {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+body.quarto-dark .ml-resource-logo img[alt="GitHub"] {
+  filter: invert(1);
+}
+
+body.quarto-dark .ml-resource-logo-wide {
+  background: #10283a;
+  border-color: #1d3f57;
+}
+
+body.quarto-dark .ml-status {
+  background: #33200f;
+  border-color: #5a3515;
+  color: #ffb983;
+}
+
+body.quarto-dark .ml-status-live {
+  background: #12293b;
+  border-color: #1f4560;
+  color: var(--buas-blue);
+}
+
+body.quarto-dark .ml-status-live:hover,
+body.quarto-dark .ml-status-live:focus-visible {
+  background: #173550;
+  border-color: var(--buas-blue);
+  color: var(--buas-blue);
 }
 
 /* =========================================================

@@ -6,12 +6,22 @@ website:
   title: "Introduction to Machine Learning"
   page-navigation: true
 
+  # "Report an issue" link (with GitHub icon) under each page's table of contents.
+  repo-url: https://github.com/BredaUniversityADSAI/ml-book
+  repo-actions: [issue]
+
   # The sidebar defines both the visual hierarchy and the previous/next order.
   # Self-study is nested Self-study -> Theme -> Activity, which a book's
   # `chapters`/`part` cannot express (it allows only one level of parts).
   sidebar:
     style: floating
     collapse-level: 1
+    # Icons under the sidebar title. The dark-mode toggle is added next to
+    # them automatically because a dark theme is configured below.
+    tools:
+      - icon: github
+        href: https://github.com/BredaUniversityADSAI/ml-book
+        aria-label: GitHub repository
 
     contents:
     - index.qmd
@@ -110,7 +120,9 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme:
+      light: cosmo
+      dark: [cosmo, theme-dark.scss]
     css: styles.css
     filters:
       - filters/colab-button.lua

@@ -1,0 +1,27 @@
+/*-- scss:defaults --*/
+
+// Dark variant of Cosmo, used by the sidebar's dark-mode toggle.
+// Layered on top of Cosmo (see `theme.dark` in _quarto.yml) so fonts and
+// spacing stay identical between the two modes; only colors change here.
+// Homepage-specific overrides live in styles.css under `body.quarto-dark`.
+
+$body-bg: #111820;
+$body-color: #d5dde6;
+$body-secondary-color: #9aa8b6;
+$headings-color: #eef2f6;
+$link-color: #6cb8ea;
+$border-color: #2a3744;
+
+$code-color: #ffb27a;
+$code-block-bg: #18222c;
+
+$input-bg: #18222c;
+$input-color: #d5dde6;
+$input-border-color: #2f4152;
+
+$table-color: #d5dde6;
+$table-border-color: #2a3744;
+
+// <mark>Your Turn</mark> highlights in the notebooks.
+$mark-bg: #5a3416;
+$mark-color: #ffe3cc;
