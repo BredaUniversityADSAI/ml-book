@@ -192,6 +192,63 @@ More modern frameworks such as CRISP-ML(Q) extend these ideas for production mac
 :::: {.ml-section-head}
 
 ::: {.ml-eyebrow}
+The Structure
+:::
+
+## Learn. Apply. Demonstrate.
+
+In our program, every course has three core components: **Self-study**, **DataLab**, and **Assessment**.
+Self-study teaches the core concepts independently of the course project. DataLab is where you apply those concepts to a real client challenge. Just like in a real project, this work produces deliverables such as code, reports, and presentations. These deliverables then form the basis for assessment.
+
+For this public course, we kept all three components, but adapted them for independent learning without supervision or formal grading. Some activities that are part of the on-campus course are therefore simplified or omitted. For example, our students normally prepare and deliver a presentation as part of the assessment, while the public course focuses on the Kaggle competition as the main way to evaluate your solution and compare your performance.
+
+::::
+
+::::: {.ml-tracks}
+
+::: {.ml-track}
+### 📘 Self-study
+
+Learn the concepts independently of the project.
+
+- Learn how classification works
+- Build and evaluate a model on a simple dataset
+- Practice the workflow before using it in the project
+:::
+
+::: {.ml-track}
+### 🧪 DataLab Project
+
+Apply what you learned to the real client challenge.
+
+- Work with the molecular dataset
+- Build a model to predict molecular stability
+- Improve your solution through successive CRISP-DM iterations
+:::
+
+::: {.ml-track}
+### 🏁 Assessment
+
+Demonstrate how well your solution performs.
+
+- Generate predictions for unseen molecules
+- Submit your solution to the Kaggle competition
+- Use your Kaggle score to evaluate and improve your model
+:::
+
+:::::
+
+::: {.ml-note}
+**About the data:** the course uses real molecular structures and research-derived datasets. For a fair educational competition, course-specific target values are generated to follow realistic chemical distributions rather than reproducing all publicly available target values directly.
+:::
+
+::::::
+
+:::::: {.ml-section}
+
+:::: {.ml-section-head}
+
+::: {.ml-eyebrow}
 Why this course is different
 :::
 
@@ -345,55 +402,7 @@ Feature engineering, model selection, tuning, experimentation and evidence-drive
 
 ::::::
 
-:::::: {.ml-section}
 
-:::: {.ml-section-head}
-
-::: {.ml-eyebrow}
-Two connected learning tracks
-:::
-
-## Learn the concepts. Then use them.
-
-::::
-
-::::: {.ml-tracks}
-
-::: {.ml-track}
-### 📘 Self-study
-
-Textbook readings, executable notebooks, videos and research activities covering the core machine-learning toolkit.
-
-- Foundations of machine learning
-- End-to-end ML workflows
-- Data understanding & preparation
-- Modelling & evaluation
-- Supervised & unsupervised learning
-- Advanced scikit-learn & tree-based methods
-- Advanced applied ML
-:::
-
-::: {.ml-track}
-### 🧪 DataLab tasks
-
-Project work in which the same concepts are applied to molecular data for a real client problem in organic photovoltaics.
-
-- CRISP-DM iteration and baseline models
-- Business & data understanding
-- Data preparation and molecular descriptors
-- Classification of stability
-- Regression of HOMO/LUMO levels
-- Clustering and molecular similarity
-- Model improvement through iterative experimentation
-:::
-
-:::::
-
-::: {.ml-note}
-**About the data:** the course uses real molecular structures and research-derived datasets. For a fair educational competition, course-specific target values are generated to follow realistic chemical distributions rather than reproducing all publicly available target values directly.
-:::
-
-::::::
 
 :::::: {.ml-section}
 

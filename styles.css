@@ -390,29 +390,91 @@ section.overview-title > h1 {
   margin-bottom: 0;
 }
 
+/* Structure: Learn -> Apply -> Demonstrate, as three connected stages. */
 .ml-tracks {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem;
 }
 
 .ml-track {
+  --accent: var(--buas-blue);
+  --accent-soft: #eaf2f8;
+  position: relative;
+  display: flex;
+  flex-direction: column;
   border: 1px solid var(--line);
-  border-radius: 20px;
-  padding: 1.7rem;
+  border-top: 5px solid var(--accent);
+  border-radius: 18px;
+  padding: 1.6rem 1.5rem 1.4rem;
   background: white;
+  box-shadow: 0 10px 26px rgba(16, 47, 70, 0.07);
+}
+
+.ml-track:nth-child(2) {
+  --accent: var(--buas-orange);
+  --accent-soft: #fef1e7;
+}
+
+.ml-track:nth-child(3) {
+  --accent: #138a7a;
+  --accent-soft: #e6f5f2;
+}
+
+/* Chevron in the gap pointing to the next stage. */
+.ml-track:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: calc(-1.2rem - 0.42rem);
+  width: 0.85rem;
+  height: 0.85rem;
+  border-top: 3px solid #b8c2cf;
+  border-right: 3px solid #b8c2cf;
+  transform: translateY(-50%) rotate(45deg);
 }
 
 .ml-track h3 {
-  font-size: 1.35rem;
+  font-size: 1.3rem;
+  margin: 0 0 0.6rem 0;
+}
+
+.ml-track > p {
+  color: var(--ink);
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 1.1rem;
 }
 
 .ml-track ul {
-  margin-bottom: 0;
+  list-style: none;
+  padding: 1.1rem 0 0 0;
+  margin: 0;
+  border-top: 1px solid var(--line);
 }
 
 .ml-track li {
-  margin-bottom: 0.4rem;
+  position: relative;
+  padding-left: 1.6rem;
+  margin-bottom: 0.6rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.ml-track li:last-child {
+  margin-bottom: 0;
+}
+
+.ml-track li::before {
+  content: "";
+  position: absolute;
+  left: 0.2rem;
+  top: 0.45em;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-soft);
 }
 
 .ml-journey {
@@ -568,6 +630,19 @@ section.overview-title > h1 {
 
   .ml-journey {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ml-tracks {
+    grid-template-columns: 1fr;
+    gap: 2.2rem;
+  }
+
+  .ml-track:not(:last-child)::after {
+    top: auto;
+    right: auto;
+    left: 50%;
+    bottom: calc(-1.1rem - 0.55rem);
+    transform: translateX(-50%) rotate(135deg);
   }
 }
 
