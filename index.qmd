@@ -165,6 +165,10 @@ Performance matters, but so does explaining why a model works, where it fails, a
 
 :::::: {.ml-section .ml-client}
 
+:::: {.ml-video}
+<iframe src="https://www.youtube.com/embed/2dMROtxPB3M?start=179" title="OMEGA Research Lab" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+::::
+
 :::: {.ml-client-copy}
 
 ::: {.ml-eyebrow}
@@ -179,10 +183,6 @@ Students take the role of **applied data scientists**. They use established mach
 
 [Visit the OMEGA Lab](https://omegalab.kaust.edu.sa/){target="_blank"} · [Prof. Derya Baran at KAUST](https://www.kaust.edu.sa/en/study/faculty/derya-baran){target="_blank"}
 
-::::
-
-:::: {.ml-video}
-<iframe src="https://www.youtube.com/embed/2dMROtxPB3M?start=179" title="OMEGA Research Lab" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 ::::
 
 ::::::

@@ -284,11 +284,11 @@ section.overview-title > h1 {
   margin-bottom: 0.45rem;
 }
 
+/* Video on top, full card width; text below. */
 .ml-client {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 2rem;
-  align-items: center;
+  grid-template-columns: 1fr;
+  gap: 1.8rem;
   background: #102f46;
   color: white;
   padding: 2.1rem;
@@ -551,8 +551,7 @@ section.overview-title > h1 {
    ========================================================= */
 
 @media (max-width: 1000px) {
-  .ml-hero,
-  .ml-client {
+  .ml-hero {
     grid-template-columns: 1fr;
   }
 
