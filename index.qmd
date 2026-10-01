@@ -40,8 +40,8 @@ The Omega Lab is searching for molecules for next-generation solar cells. Testin
 :::
 
 ::: {.ml-actions}
-[Explore the course](#course-journey){.ml-btn .ml-btn-primary}
-[View the notebooks on GitHub](https://github.com/BredaUniversityADSAI/ml-book){.ml-btn .ml-btn-secondary}
+[Meet the client](#the-client){.ml-btn .ml-btn-primary}
+[How the course works](#course-structure){.ml-btn .ml-btn-secondary}
 :::
 
 :::::
@@ -85,7 +85,7 @@ The Omega Lab is searching for molecules for next-generation solar cells. Testin
 
 
 
-:::::: {.ml-section .ml-client}
+:::::: {.ml-section .ml-client #the-client}
 
 :::: {.ml-video}
 ```{=html}
@@ -233,7 +233,7 @@ More modern frameworks such as CRISP-ML(Q) extend these ideas for production mac
 
 ::::::
 
-:::::: {.ml-section}
+:::::: {.ml-section #course-structure}
 
 :::: {.ml-section-head}
 

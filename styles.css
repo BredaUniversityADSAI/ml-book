@@ -21,6 +21,22 @@ section.overview-title > h1 {
   box-sizing: border-box;
 }
 
+/* Hero buttons jump to in-page sections: scroll smoothly, keep a little space above. */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+#the-client,
+#course-structure {
+  scroll-margin-top: 1.5rem;
+}
+
 .ml-hero {
   display: grid;
   grid-template-columns: 1.4fr 0.6fr;
