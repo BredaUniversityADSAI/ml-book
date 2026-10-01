@@ -231,7 +231,7 @@ Apply what you learned to the real client challenge.
 
 Demonstrate how well your solution performs.
 
-- Generate predictions for unseen molecules
+- Predict on unseen molecules
 - Submit your solution to the Kaggle competition
 - Use your Kaggle score to evaluate and improve your model
 :::
@@ -239,7 +239,7 @@ Demonstrate how well your solution performs.
 :::::
 
 ::: {.ml-note}
-**About the data:** the course uses real molecular structures and research-derived datasets. For a fair educational competition, course-specific target values are generated to follow realistic chemical distributions rather than reproducing all publicly available target values directly.
+**About the data:** The course uses real molecular structures and features. For a fair educational competition, course-specific target values are generated to follow realistic chemical distributions.
 :::
 
 ::::::
@@ -252,9 +252,9 @@ Demonstrate how well your solution performs.
 Why this course is different
 :::
 
-## We teach machine learning through a real client problem—not as a collection of isolated algorithms.
+## Machine learning is more than modeling.
 
-Many introductory ML courses stop at clean datasets and self-contained exercises. Here, students work as applied data scientists: understand the client problem, inspect and prepare imperfect data, build baselines, evaluate honestly, iterate, and communicate what the result means.
+Many introductory machine-learning courses focus mainly on algorithms and model performance. However, there is a big difference between building a model with excellent accuracy and building an ML solution that actually helps a client. In this course, students experience the broader workflow: understanding the domain and the client problem, turning raw data into something useful, and improving a solution through repeated iteration.
 
 ::::
 
@@ -265,15 +265,16 @@ Many introductory ML courses stop at clean datasets and self-contained exercises
 
 ### Start with the client
 
-The client problem comes first. Students build enough understanding of the scientific domain to make sensible modelling decisions.
+Successful ML projects require more than ML knowledge. Students are not expected to become chemists, but they do need to spend time understanding the client problem. This also means looking beyond model metrics: Are we solving the right problem? What would make the model useful to the client? What information about a molecule should the model actually use, and how can we represent that information through meaningful features?
 :::
 
 ::: {.ml-diff-card}
 <div class="num">2</div>
 
-### Work with molecular data
+### Work with raw data
 
-Students move from SMILES strings and molecular descriptors to analysis-ready features rather than receiving a perfectly prepared toy table.
+Many courses start with datasets that are already clean and ready for modelling. Real projects rarely do.
+Students work with raw molecular data and learn how to inspect, understand and transform it into features suitable for machine learning. Preparing the data is not just a step before modelling, it is a core machine-learning skill.
 :::
 
 ::: {.ml-diff-card}
@@ -281,21 +282,64 @@ Students move from SMILES strings and molecular descriptors to analysis-ready fe
 
 ### Iterate through CRISP-DM
 
-The process is deliberately non-linear: findings in modelling send students back to data understanding, preparation and feature engineering.
-:::
-
-::: {.ml-diff-card}
-<div class="num">4</div>
-
-### Compete, explain, improve
-
-Performance matters, but so does explaining why a model works, where it fails, and what should happen next.
+Iteration is often limited in teaching exercises: train a few models, compare the results, and move on. Real ML projects are much more iterative. Students repeatedly revisit data preparation, features, models and evaluation as they learn more about the problem. Some student projects in this course have gone through more than 100 experiments before reaching their final solution.
 :::
 
 :::::
 
 ::::::
 
+:::::: {.ml-section}
+
+:::: {.ml-section-head}
+
+::: {.ml-eyebrow}
+Student voices
+:::
+
+## What students say.
+
+Selected answers from first-year students to the course evaluation survey.
+
+::::
+
+::::: {.ml-quotes}
+
+::: {.ml-quote .ml-quote-featured}
+<div class="ml-quote-tag">On the client project</div>
+
+> I really like the fact that we worked with a real-life project and got the experience of a real data scientist role.
+
+<div class="ml-quote-by">Year 1 student · Applied Data Science & AI</div>
+:::
+
+::: {.ml-quote}
+<div class="ml-quote-tag">On CRISP-DM</div>
+
+> We have the opportunity to see the whole process of developing an ML model.
+
+<div class="ml-quote-by">Year 1 student</div>
+:::
+
+::: {.ml-quote}
+<div class="ml-quote-tag">On the Kaggle competition</div>
+
+> Kaggle competition allows us to experiment ourselves with the best approach.
+
+<div class="ml-quote-by">Year 1 student</div>
+:::
+
+::: {.ml-quote}
+<div class="ml-quote-tag">On understanding the code</div>
+
+> Kaggle competition was very entertaining and eye opening, I had to truly understand code to get it right, and just asking Claude wouldn't've cut it.
+
+<div class="ml-quote-by">Year 1 student</div>
+:::
+
+:::::
+
+::::::
 
 
 :::::: {.ml-section}
@@ -303,128 +347,24 @@ Performance matters, but so does explaining why a model works, where it fails, a
 :::: {.ml-section-head}
 
 ::: {.ml-eyebrow}
-From guided to independent
+COURSE MATERIALS & SETUP
 :::
 
-## The scaffolding disappears as students become more capable.
-
-The course starts with strongly guided notebooks, then transitions to structured tasks, and finally to open-ended iteration where students decide what to try next.
-
-::::
-
-::::: {.ml-progress}
-
-::: {.ml-step}
-**01 · Guided**
-
-### Build the first models
-
-Step-by-step notebooks introduce the complete workflow and get classification, regression and clustering running quickly.
-:::
-
-::: {.ml-step}
-**02 · Structured**
-
-### Go deeper
-
-Students investigate the data, prepare features, compare models and justify modelling choices with progressively less support.
-:::
-
-::: {.ml-step}
-**03 · Open-ended**
-
-### Iterate like a data scientist
-
-Students choose experiments, tune models, engineer features and revisit earlier CRISP-DM phases based on evidence.
-:::
-
-:::::
-
-::::::
-
-:::::: {.ml-section #course-journey}
-
-:::: {.ml-section-head}
-
-::: {.ml-eyebrow}
-Course journey
-:::
-
-## From machine-learning fundamentals to real-world application.
-
-The self-study material provides the conceptual spine. DataLab tasks turn those concepts into decisions on the client project.
-
-::::
-
-::::: {.ml-journey}
-
-::: {.ml-journey-item}
-<div class="week">Stage 1</div>
-
-### Foundations & end-to-end ML
-
-What ML is, how a complete workflow fits together, and how to create first baseline models.
-:::
-
-::: {.ml-journey-item}
-<div class="week">Stage 2</div>
-
-### Understand & prepare data
-
-Explore distributions, relationships and quality issues; transform molecular information into useful features.
-:::
-
-::: {.ml-journey-item}
-<div class="week">Stage 3</div>
-
-### Model & evaluate
-
-Select metrics, build robust validation, compare baselines and understand the consequences of modelling choices.
-:::
-
-::: {.ml-journey-item}
-<div class="week">Stage 4</div>
-
-### Supervised & unsupervised learning
-
-Classification, regression, clustering, advanced scikit-learn workflows and tree-based methods.
-:::
-
-::: {.ml-journey-item}
-<div class="week">Stage 5</div>
-
-### Advanced applied ML
-
-Feature engineering, model selection, tuning, experimentation and evidence-driven iteration on a difficult real client challenge.
-:::
-
-:::::
-
-::::::
-
-
-
-:::::: {.ml-section}
-
-:::: {.ml-section-head}
-
-::: {.ml-eyebrow}
-Course materials & prerequisites
-:::
-
-## Required reading and what you should know.
+## Everything you need to get started.
 
 Students are expected to study relevant chapters from the course textbook as part of the self-study material, and to arrive with working knowledge of the tools listed below.
 
 ::::
 
 ::: {.ml-sub-eyebrow}
-Required Textbook
+Textbook
 :::
 
+The course uses selected chapters from the following book alongside the self-study materials.
+
 ::: {.ml-textbook}
-<div class="ml-textbook-label">Required Reading</div>
-<div class="ml-textbook-title"><em>Hands-On Machine Learning with Scikit-Learn, Keras &amp; TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems</em></div>
+<div class="ml-textbook-label">Course Textbook</div>
+<div class="ml-textbook-title"><em>Hands-On Machine Learning with Scikit-Learn, Keras &amp; TensorFlow</em></div>
 <div class="ml-textbook-meta">Aurélien Géron &nbsp;·&nbsp; O'Reilly Media &nbsp;·&nbsp; 3rd edition &nbsp;·&nbsp; 2022</div>
 :::
 
@@ -456,6 +396,36 @@ Series and DataFrame manipulation, reading data files, filtering, grouping, and 
 ### Matplotlib
 
 Creating line plots, histograms, and scatter plots; customising figures for exploratory data analysis.
+:::
+
+:::::
+
+::: {.ml-sub-eyebrow}
+Course resources
+:::
+
+::::: {.ml-resource-grid}
+
+::: {.ml-resource-card}
+<div class="ml-resource-top">
+<span class="ml-resource-logo"><img src="images/icons/github.svg" alt="GitHub"></span>
+<span class="ml-status">Under preparation</span>
+</div>
+
+### Course repository
+
+The course repository contains the setup instructions, code, and data used throughout the course. It also explains how to prepare your Python environment using uv.
+:::
+
+::: {.ml-resource-card}
+<div class="ml-resource-top">
+<span class="ml-resource-logo ml-resource-logo-wide"><img src="images/icons/kaggle.svg" alt="Kaggle"></span>
+<span class="ml-status">Under preparation</span>
+</div>
+
+### Kaggle competition
+
+The course includes a Kaggle competition where you generate predictions for unseen molecules and submit them for evaluation. Your leaderboard score gives you an indication of how well your solution performs.
 :::
 
 :::::

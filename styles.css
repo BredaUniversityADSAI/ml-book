@@ -256,7 +256,7 @@ section.overview-title > h1 {
 
 .ml-difference {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 
@@ -355,6 +355,99 @@ section.overview-title > h1 {
 
 .ml-model-card h3 {
   margin: 0.45rem 0;
+}
+
+/* Student testimonials: one featured quote + three compact quotes. */
+.ml-quotes {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 1.1rem;
+}
+
+.ml-quote {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--buas-orange);
+  border-radius: 16px;
+  padding: 1.2rem 1.4rem;
+}
+
+.ml-quote-featured {
+  grid-row: span 3;
+  background: #102f46;
+  border: 0;
+  border-radius: 24px;
+  padding: 2.4rem 2.4rem 2.2rem;
+  color: white;
+  overflow: hidden;
+}
+
+/* Large decorative quotation mark. */
+.ml-quote-featured::before {
+  content: "\201C";
+  position: absolute;
+  top: 1.1rem;
+  right: 1.8rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 7.5rem;
+  line-height: 1;
+  color: var(--buas-orange);
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.ml-quote-tag {
+  color: var(--buas-orange);
+  font-size: 0.72rem;
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.55rem;
+}
+
+.ml-quote blockquote,
+.ml-quote .blockquote {
+  margin: 0 0 0.7rem 0;
+  padding: 0;
+  border: 0;
+  font-size: 1.02rem;
+  line-height: 1.55;
+  color: var(--ink);
+}
+
+.ml-quote blockquote p {
+  margin: 0;
+}
+
+.ml-quote-featured blockquote,
+.ml-quote-featured .blockquote {
+  position: relative;
+  font-size: clamp(1.3rem, 2vw, 1.65rem);
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+  color: white;
+  margin-bottom: 1.6rem;
+}
+
+.ml-quote-by {
+  margin-top: auto;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+/* Centre tag + quote vertically; attribution stays at the bottom. */
+.ml-quote-featured .ml-quote-tag {
+  margin-top: auto;
+}
+
+.ml-quote-featured .ml-quote-by {
+  color: #b8cad8;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
 }
 
 .ml-progress {
@@ -599,6 +692,112 @@ section.overview-title > h1 {
   line-height: 1.55;
 }
 
+/* Course resources (repository, Kaggle) with a status badge. */
+.ml-resource-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.ml-resource-card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 1.4rem 1.5rem 1.5rem;
+  box-shadow: 0 6px 18px rgba(16, 47, 70, 0.05);
+}
+
+.ml-resource-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Pandoc wraps the inline logo + badge in a <p>; let them be flex items. */
+.ml-resource-top > p {
+  display: contents;
+}
+
+.ml-resource-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 12px;
+  background: var(--soft);
+  border: 1px solid var(--line);
+}
+
+.ml-resource-logo img {
+  width: 1.45rem;
+  height: 1.45rem;
+}
+
+.ml-resource-logo-wide {
+  width: auto;
+  padding: 0 0.85rem;
+  background: #eef9ff;
+  border-color: #d3efff;
+}
+
+.ml-resource-logo-wide img {
+  width: auto;
+  height: 1.05rem;
+}
+
+.ml-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.28rem 0.7rem;
+  border-radius: 999px;
+  background: #fff6ec;
+  border: 1px solid #fde3c8;
+  color: #9a4a0b;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+/* Softly pulsing dot signalling work in progress. */
+.ml-status::before {
+  content: "";
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: var(--buas-orange);
+  animation: ml-pulse 2s ease-in-out infinite;
+}
+
+@keyframes ml-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ml-status::before {
+    animation: none;
+  }
+}
+
+.ml-resource-card h3 {
+  font-size: 1.1rem;
+  margin: 0 0 0.45rem 0;
+  color: var(--ink);
+}
+
+.ml-resource-card p {
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
 .ml-sub-eyebrow {
   color: var(--muted);
   font-size: 0.78rem;
@@ -622,7 +821,6 @@ section.overview-title > h1 {
     order: -1;
   }
 
-  .ml-difference,
   .ml-stats,
   .ml-prereq-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -635,6 +833,14 @@ section.overview-title > h1 {
   .ml-tracks {
     grid-template-columns: 1fr;
     gap: 2.2rem;
+  }
+
+  .ml-quotes {
+    grid-template-columns: 1fr;
+  }
+
+  .ml-quote-featured {
+    grid-row: auto;
   }
 
   .ml-track:not(:last-child)::after {
@@ -663,7 +869,8 @@ section.overview-title > h1 {
   .ml-journey,
   .ml-footer-cta,
   .ml-course-info,
-  .ml-prereq-grid {
+  .ml-prereq-grid,
+  .ml-resource-grid {
     grid-template-columns: 1fr;
   }
 
