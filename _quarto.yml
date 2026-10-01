@@ -112,5 +112,7 @@ format:
   html:
     theme: cosmo
     css: styles.css
+    filters:
+      - filters/colab-button.lua
     toc: true
     number-sections: false

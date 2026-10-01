@@ -1130,3 +1130,16 @@ html {
     margin-top: 0.7rem;
   }
 }
+
+/* =========================================================
+   "Open in Colab" badge (injected by filters/colab-button.lua)
+   ========================================================= */
+
+.colab-launch {
+  margin: 0.25rem 0 1.5rem;
+}
+
+.colab-launch img {
+  display: block;
+  height: 20px;
+}
