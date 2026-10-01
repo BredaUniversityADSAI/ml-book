@@ -83,6 +83,82 @@ The Omega Lab is searching for molecules for next-generation solar cells. Testin
 
 ::::::
 
+
+
+:::::: {.ml-section .ml-client}
+
+:::: {.ml-video}
+<iframe src="https://www.youtube.com/embed/2dMROtxPB3M?start=179" title="OMEGA Research Lab" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+::::
+
+:::: {.ml-client-copy}
+
+::: {.ml-eyebrow}
+The client
+:::
+
+## OMEGA Lab
+
+The course is built around a real client problem from the Organic/Hybrid Materials for Energy Applications (OMEGA) Lab, led by Prof. Derya Baran at KAUST.
+
+OMEGA Lab is developing materials and methods for more sustainable electronic and energy devices. Their work includes solar cells, organic and printed electronics, energy-conversion materials, and manufacturing processes designed to use less energy and reduce environmental impact.
+
+They need your help to use machine learning to identify and predict promising molecules for solar cell applications.
+
+[Visit the OMEGA Lab](https://www.omegalabresearch.com/){target="_blank"} · [Prof. Derya Baran at KAUST](https://www.kaust.edu.sa/en/study/faculty/derya-baran){target="_blank"}
+
+::::
+
+::::::
+
+:::::: {.ml-section}
+
+:::: {.ml-section-head}
+
+::: {.ml-eyebrow}
+The challenge
+:::
+
+## Predict Solar Cell Material Properties
+
+You will develop a machine learning solution to predict solar cell material properties from molecular structure alone. This will allow the client to screen thousands of molecules computationally, reducing the need to synthesize and measure each one experimentally and helping them focus their resources on the most promising candidates.
+
+::::
+
+::: {.ml-pipeline}
+![From molecular structures through machine learning to flexible photovoltaic technology](images/ml-opv-pipeline.png)
+:::
+
+::::: {.ml-model-grid}
+
+::: {.ml-model-card}
+<div class="tag">Regression</div>
+
+### Predict energy levels
+
+The energy levels of a material strongly influence how efficiently a solar cell can convert light into electricity. You will build regression models to predict these energy levels directly from molecular structure.
+:::
+
+::: {.ml-model-card}
+<div class="tag">Classification</div>
+
+### Predict stability
+
+Organic materials can degrade over time, so high efficiency alone is not enough. The client needs materials that are both efficient and stable. You will build models to predict material stability and help identify molecules that perform well on both properties.
+:::
+
+::: {.ml-model-card}
+<div class="tag">Clustering</div>
+
+### Discover similarity
+
+Use unsupervised learning to identify molecular groups, investigate similarity, and feed those insights back into predictive modelling.
+:::
+
+:::::
+
+::::::
+
 :::::: {.ml-section}
 
 :::: {.ml-section-head}
@@ -163,77 +239,7 @@ Performance matters, but so does explaining why a model works, where it fails, a
 
 ::::::
 
-:::::: {.ml-section .ml-client}
 
-:::: {.ml-video}
-<iframe src="https://www.youtube.com/embed/2dMROtxPB3M?start=179" title="OMEGA Research Lab" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-::::
-
-:::: {.ml-client-copy}
-
-::: {.ml-eyebrow}
-The client
-:::
-
-## Prof. Derya Baran & the OMEGA Lab at KAUST
-
-The course is built around a real client problem from the **Organic/Hybrid Materials for Energy Applications (OMEGA) Lab**, led by Prof. Derya Baran at King Abdullah University of Science and Technology (KAUST). The lab conducts research into solution-processable materials and devices for energy applications, including organic and hybrid photovoltaics.
-
-Students take the role of **applied data scientists**. They use established machine-learning methods to predict properties of candidate molecules that matter for organic photovoltaics—turning chemical structure into useful evidence for the client. The research domain is solar energy; the students' contribution is applied machine learning.
-
-[Visit the OMEGA Lab](https://omegalab.kaust.edu.sa/){target="_blank"} · [Prof. Derya Baran at KAUST](https://www.kaust.edu.sa/en/study/faculty/derya-baran){target="_blank"}
-
-::::
-
-::::::
-
-:::::: {.ml-section}
-
-:::: {.ml-section-head}
-
-::: {.ml-eyebrow}
-The modelling challenge
-:::
-
-## Three ML tasks, one real client problem.
-
-Rather than learning classification, regression and clustering as unrelated chapters, students apply each method to a different part of the same client challenge.
-
-::::
-
-::: {.ml-pipeline}
-![From molecular structures through machine learning to flexible photovoltaic technology](images/ml-opv-pipeline.png)
-:::
-
-::::: {.ml-model-grid}
-
-::: {.ml-model-card}
-<div class="tag">Classification</div>
-
-### Predict molecular stability
-
-Build models that classify candidate molecules into stability categories and improve them through feature engineering, validation and tuning.
-:::
-
-::: {.ml-model-card}
-<div class="tag">Regression</div>
-
-### Predict HOMO & LUMO
-
-Estimate molecular energy levels from chemical structure and evaluate models with appropriate regression metrics.
-:::
-
-::: {.ml-model-card}
-<div class="tag">Clustering</div>
-
-### Discover molecular similarity
-
-Use unsupervised learning to identify molecular groups, investigate similarity, and feed those insights back into predictive modelling.
-:::
-
-:::::
-
-::::::
 
 :::::: {.ml-section}
 
