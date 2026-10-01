@@ -4,10 +4,13 @@ A public, first-year machine learning course from the [Applied Data Science & AI
 
 You learn machine learning by solving a real problem. The client is the OMEGA Lab at KAUST, which is searching for molecules for next-generation organic solar cells. You build models that predict molecular properties from structure, so the lab can screen thousands of candidates computationally and only test the most promising ones.
 
-The course has two tracks:
+The course has three core components:
 
-- **Self-study**: Jupyter notebooks and reading guides covering the fundamentals: classification, regression, clustering, the end-to-end ML workflow, scikit-learn pipelines, decision trees and ensembles.
-- **DataLab**: a project where you apply those concepts to real molecular data (HOPV dataset) across iterations with decreasing guidance, ending in a Kaggle competition.
+- **Self-study**: learn the concepts independently of the project. Jupyter notebooks and reading guides cover the fundamentals: classification, regression, clustering, the end-to-end ML workflow, scikit-learn pipelines, decision trees and ensembles.
+- **DataLab**: apply what you learned to the real client challenge. You work with real molecular data (the HOPV dataset) and improve your solution through successive CRISP-DM iterations, with less guidance in each one.
+- **Assessment**: demonstrate how well your solution performs. You predict properties of unseen molecules and submit them to a Kaggle competition, then use your score to evaluate and improve your model.
+
+The on-campus course also assesses deliverables such as reports and presentations. This public version is adapted for independent learning without supervision or formal grading, so the Kaggle competition is the main way to evaluate your solution.
 
 📖 **Course website:** <https://bredauniversityadsai.github.io/ml-book/>
 
