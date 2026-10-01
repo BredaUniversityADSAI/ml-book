@@ -398,8 +398,6 @@ COURSE MATERIALS & SETUP
 
 ## Everything you need to get started.
 
-Students are expected to study relevant chapters from the course textbook as part of the self-study material, and to arrive with working knowledge of the tools listed below.
-
 ::::
 
 ::: {.ml-sub-eyebrow}
