@@ -1,17 +1,4 @@
 /* =========================================================
-   DataLab navigation
-   ========================================================= */
-
-/*
-   DataLab uses Iteration / Task terminology rather than
-   Quarto's book chapter numbering.
-*/
-#quarto-sidebar a[href*="datalab/"] .chapter-number {
-  display: none !important;
-}
-
-
-/* =========================================================
    Homepage
    ========================================================= */
 

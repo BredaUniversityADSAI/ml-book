@@ -261,7 +261,7 @@ Course journey
 
 ## From machine-learning fundamentals to real-world application.
 
-The self-study notebooks provide the conceptual spine. DataLab tasks turn those concepts into decisions on the client project.
+The self-study material provides the conceptual spine. DataLab tasks turn those concepts into decisions on the client project.
 
 ::::
 
@@ -326,9 +326,9 @@ Two connected learning tracks
 ::::: {.ml-tracks}
 
 ::: {.ml-track}
-### 📘 Self-study notebooks
+### 📘 Self-study
 
-Concise explanations, executable examples and exercises covering the core machine-learning toolkit.
+Textbook readings, executable notebooks, videos and research activities covering the core machine-learning toolkit.
 
 - Foundations of machine learning
 - End-to-end ML workflows
@@ -371,7 +371,7 @@ Course materials & prerequisites
 
 ## Required reading and what you should know.
 
-Students are expected to study relevant chapters from the course textbook alongside the self-study notebooks, and to arrive with working knowledge of the tools listed below.
+Students are expected to study relevant chapters from the course textbook as part of the self-study material, and to arrive with working knowledge of the tools listed below.
 
 ::::
 
