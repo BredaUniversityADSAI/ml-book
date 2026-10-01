@@ -32,6 +32,8 @@ website:
       contents:
         - section: "1. Foundations of Machine Learning"
           contents:
+            - href: self-study/00_what_is_machine_learning.qmd
+              text: "What is Machine Learning?"
             - href: self-study/01_machine_learning_landscape.qmd
               text: "The Machine Learning Landscape"
             - href: self-study/001_getting_started.ipynb

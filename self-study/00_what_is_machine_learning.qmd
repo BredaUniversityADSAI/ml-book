@@ -1,0 +1,47 @@
+---
+resources:
+  - fit-demo.js
+---
+
+# What is Machine Learning?
+
+## 1. Fit a line
+
+Each dot is one observation: $x$ is something we know, $y$ is something we want to predict. A straight line is our **model**: given any $x$, it predicts a $y$.
+
+The line always starts at $y = 1$. Move the slider to change its slope until the line fits the data as well as you can.
+
+::: {.fit-demo data-stage="1"}
+:::
+
+You just did machine learning. You picked a model (a straight line) and adjusted its **parameter** (the slope) until the model matched the data. A machine learning algorithm does the same thing, without eyeballing.
+
+## 2. Measure the fit
+
+To let a computer find the best line, "fits well" needs to become a number.
+
+For each point, the vertical gap between the point and the line is the **error** of the prediction. Square each error and take the average to get the **cost**, also called the mean squared error:
+
+$$
+\text{cost} = \frac{1}{n} \sum_{i=1}^{n} \left( y_i - \hat{y}_i \right)^2
+$$
+
+where $\hat{y}_i$ is the line's prediction for point $i$. Change the slope again and watch the cost on the right.
+
+::: {.fit-demo data-stage="2"}
+:::
+
+The best fit is simply the slope with the **lowest cost**. Finding the best line is now a search for the bottom of that curve.
+
+## 3. Two parameters
+
+A line has two parameters: the slope and the intercept (where the line crosses the y-axis). Now both can change, so the cost depends on both of them.
+
+The map on the right shows the cost for every combination. Each spot on the map is one possible line; lighter means lower cost. Use the sliders, or drag on the map, to find the lowest point.
+
+::: {.fit-demo data-stage="3"}
+:::
+
+Training a model means searching for the parameter values with the lowest cost. Real models can have millions of parameters, far too many to draw as a map, but the idea stays the same. Instead of you moving sliders, an algorithm does the search.
+
+<script src="fit-demo.js"></script>
